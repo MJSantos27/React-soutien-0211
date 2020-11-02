@@ -5,10 +5,8 @@ function SportCard(props) {
   return (
     <div className="SportCard">
       <h3>{props.sportName}</h3>
-      <img
-        src="https://www.thesportsdb.com/images/sports/basketball.jpg"
-        alt="basketball"
-      />
+      <img>{props.image} />
+      <a href="https://fr.wikipedia.org/wiki/Football">Soccer</a>
     </div>
   );
 }
