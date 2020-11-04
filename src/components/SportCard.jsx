@@ -1,11 +1,14 @@
 import React from 'react';
 
 function SportCard(props) {
-  console.log(props);
+  // en "vieux" JavaScript (ES5)
+  // const sportName = props.sportName;
+  // const image = props.image;
+  const { sportName, image } = props;
   return (
     <div className="SportCard">
-      <h3>{props.sportName}</h3>
-      <img src={props.image} alt="img" />
+      <h3>{sportName}</h3>
+      <img src={image} alt={sportName} />
       <a href="https://fr.wikipedia.org/wiki/Football">Soccer</a>
     </div>
   );
